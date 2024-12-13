@@ -1,48 +1,27 @@
-# Astro Starter Kit: Basics
+# Growth
 
-```sh
-npm create astro@latest -- --template basics
-```
+![Texto alternativo](/Front-End/public/MarkDownReadme.jpg)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+**Growth** es una empresa de desarrollo de software enfocada en crear soluciones innovadoras para empresarios. Nuestro objetivo es ofrecer herramientas accesibles que impulsen a pequeñas y medianas empresas a crecer y alcanzar sus metas.  
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🌟 Lo que hacemos
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+En Growth nos especializamos en el desarrollo de:  
 
-## 🚀 Project Structure
+- **Sistemas POS**: Como *Luma POS*, un sistema diseñado para ser accesible y funcional para negocios pequeños y medianos.  
+- **Sistemas de productividad**: Soluciones que mejoran la organización y eficiencia en las empresas.  
+- **Software personalizado**: Adaptado a las necesidades específicas de nuestros clientes.  
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Nuestra misión
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Crear software que transforme la manera en que los empresarios manejan sus negocios, facilitando su crecimiento y competitividad en el mercado.  
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🤝 ¿Por qué elegir Growth?
 
-## 🧞 Commands
+- Soluciones accesibles y escalables.  
+- Enfoque en la innovación y la simplicidad.  
+- Compromiso con el éxito de nuestros clientes.  
 
-All commands are run from the root of the project, from a terminal:
+### Contacto  
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Si quieres saber más sobre cómo podemos ayudarte, visita nuestro sitio web o contáctanos directamente. ¡Estamos aquí para crecer contigo!
