@@ -1,27 +1,27 @@
 # Growth
 
-![Texto alternativo](/Front-End/public/MarkDownReadme.jpg)
+![Alt Text](/Front-End/public/MarkDownReadme.jpg)
 
-**Growth** es una empresa de desarrollo de software enfocada en crear soluciones innovadoras para empresarios. Nuestro objetivo es ofrecer herramientas accesibles que impulsen a pequeñas y medianas empresas a crecer y alcanzar sus metas.  
+**Growth** is a software development company focused on creating innovative solutions for entrepreneurs. Our goal is to offer accessible tools that help small and medium-sized businesses grow and achieve their goals.  
 
-## 🌟 Lo que hacemos
+## 🌟 What we do
 
-En Growth nos especializamos en el desarrollo de:  
+At Growth, we specialize in developing:  
 
-- **Sistemas POS**: Como *Luma POS*, un sistema diseñado para ser accesible y funcional para negocios pequeños y medianos.  
-- **Sistemas de productividad**: Soluciones que mejoran la organización y eficiencia en las empresas.  
-- **Software personalizado**: Adaptado a las necesidades específicas de nuestros clientes.  
+- **POS Systems**: Like *Luma POS*, a system designed to be accessible and functional for small and medium-sized businesses.  
+- **Productivity Systems**: Solutions that improve organization and efficiency within companies.  
+- **Custom Software**: Tailored to the specific needs of our clients.  
 
-## 🚀 Nuestra misión
+## 🚀 Our Mission
 
-Crear software que transforme la manera en que los empresarios manejan sus negocios, facilitando su crecimiento y competitividad en el mercado.  
+To create software that transforms the way entrepreneurs manage their businesses, facilitating their growth and competitiveness in the market.  
 
-## 🤝 ¿Por qué elegir Growth?
+## 🤝 Why Choose Growth?
 
-- Soluciones accesibles y escalables.  
-- Enfoque en la innovación y la simplicidad.  
-- Compromiso con el éxito de nuestros clientes.  
+- Accessible and scalable solutions.  
+- Focus on innovation and simplicity.  
+- Commitment to the success of our clients.  
 
-### Contacto  
+### Contact
 
-Si quieres saber más sobre cómo podemos ayudarte, visita nuestro sitio web o contáctanos directamente. ¡Estamos aquí para crecer contigo!
+If you want to learn more about how we can help, visit our website or contact us directly. We are here to grow with you!
