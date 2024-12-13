@@ -1,0 +1,17 @@
+---
+import BaseHead from '@/components/BaseHead.astro';
+
+interface Props {
+    lang?: string;
+    title?: string;
+}
+
+const { lang = 'en', title = 'Luma By Growth' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={ lang }>
+    <BaseHead title={ title } />
+<body>
+  <slot />
+</body>

@@ -1,0 +1,65 @@
+---
+import RedirectionLayout from "@/layouts/RedirectionLayout.astro";
+import Image from "astro/components/Image.astro";
+import AuthImage from '@/assets/images/AuthImage.jpg';
+import GrowthLogo from '@/icons/UpLogo.svg';
+---
+
+<RedirectionLayout title="404 - Page Not Found">
+  <main class="min-h-screen flex flex-col md:flex-row">
+
+
+    <div class="hidden md:flex w-1/2 bg-auth-image justify-center items-center">
+      <Image
+        src={AuthImage}
+        alt="404 - Page Not Found"
+        class="w-3/4 grayscale"
+        decoding="async"
+        loading="lazy"
+      />
+    </div>
+
+
+    <div class="flex-1 bg-white flex flex-col justify-center items-center px-6 relative">
+
+
+      <div class="absolute top-8">
+        <Image
+          src={GrowthLogo}
+          alt="Logo"
+          class="grayscale w-[150px]"
+          decoding="async"
+        />
+      </div>
+
+
+      <div class="flex flex-col items-center text-center max-w-md">
+        <h1 class="text-2xl md:text-4xl font-bold mb-4">
+          <span class="bg-pink-300 text-pink-500">&nbsp; Opps! &nbsp;</span>
+          You have found the lost world!
+        </h1>
+        <p class="text-gray-600 mb-8 text-sm md:text-base">
+          Home is just a click away. Let's go back and continue our regular life.
+        </p>
+        <a
+          href="/"
+          class="inline-block bg-pink-50 text-pink-500 px-6 py-3 rounded-full font-medium hover:-translate-y-1 transition-all"
+        >
+          GO TO HOME
+        </a>
+      </div>
+
+      <div class="text-center mt-8">
+        <p class="text-gray-500 text-sm">
+          Error code <span class="text-pink-500 bg-pink-50">&nbsp; 404 &nbsp;</span>
+        </p>
+      </div>
+    </div>
+  </main>
+</RedirectionLayout>
+
+<style>
+  main {
+    font-family: 'Inter', sans-serif;
+  }
+</style>

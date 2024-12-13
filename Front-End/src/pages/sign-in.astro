@@ -1,0 +1,24 @@
+---
+import AuthLayout from "@/layouts/AuthLayout.astro";
+import FormInput from "@/components/AuthForm/AuthSelect.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<AuthLayout title="Luma by Growth" lang="en">
+  <section class="h-screen grid grid-cols-1 md:grid-cols-2">
+    <section class="relative flex flex-col justify-center items-center mx-auto">
+      <a href="/" class="absolute top-10 left-1/2 transform -translate-x-1/2">
+        <Icon name="UpLogo" width={180} height={59} />
+      </a>
+      <section class="grid place-content-center mt-20">
+        <FormInput />
+      </section>
+      <p class="absolute bottom-10 text-center text-gray-400 text-sm selection:bg-pink-200 selection:text-pink-500">
+        Join a network of businesses that are reshaping the industry. Our
+        platform provides you with the tools and community you need to succeed.
+      </p>
+    </section>
+
+    <section class="bg-auth-image bg-cover md:block hidden"></section>
+  </section>
+</AuthLayout>

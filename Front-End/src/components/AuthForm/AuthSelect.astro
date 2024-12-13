@@ -1,0 +1,24 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+<div class="container">
+<div class="min-w-[400px] max-w-[800px] p-6 space-y-10">
+        <div class="text-center">
+          <h1 class="text-3xl font-bold selection:text-pink-500 selection:bg-pink-200">
+            Create an <span class="text-pink-500 selection:text-pink-500 selection:bg-pink-200">account</span>
+          </h1>
+          <p class="text-gray-500 mt-2 selection:text-pink-500 selection:bg-pink-200">Let's get started with your new Growth account.</p>
+        </div>
+        
+        
+        <div class="relative w-max-md flex gap-4 border py-1 px-1 rounded-xl bg-gray-200">
+          <button class="  border-hidden hover:border w-1/2 rounded-xl py-2 px-4 bg-white transition-all hover:text-pink-500 select-none">
+            <Icon name="google" class="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400" size={20}/>
+            Google
+          </button>
+          <button class="  w-1/2 rounded-xl py-2 px-4 hover:text-pink-500 transition-all select-none">
+            <Icon name="facebook" class="absolute top-1/2 transform -translate-y-1/2 text-gray-400" size={20}/>
+          Facebook
+        </button>
+      </div>
+</div>
