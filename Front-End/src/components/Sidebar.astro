@@ -1,0 +1,114 @@
+---
+import { CONFIG } from '@/consts';
+
+const navigation = [
+  { name: 'Dashboard', icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6', href: '/', current: true },
+  { name: 'Report', icon: 'M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z', href: '/report', hasDropdown: true },
+  { name: 'Products', icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z', href: '/billing' },
+  { name: 'Invoices', icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z', href: '/invoices' },
+  { name: 'Help Center', icon: 'M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z', href: '/help' },
+  { name: 'Settings', icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z', href: '/settings' },
+];
+
+---
+
+<aside
+  id="sidebar"
+  class="fixed inset-y-0 left-0 z-50 w-64 bg-white border-r border-gray-200 pb-10 transition-transform duration-300 ease-in-out lg:static lg:translate-x-0 -translate-x-full"
+>
+  <!-- Logo -->
+  <div class="flex items-center gap-2 px-4 py-4 border-b border-gray-200">
+    <div class="w-8 h-8 bg-green-600 rounded-lg"></div>
+    <div>
+      <h2 class="text-sm font-semibold">{ CONFIG.COMPANY_NAME }</h2>
+      <p class="text-xs text-gray-500">Software Development Company</p>
+    </div>
+    <button 
+      class="ml-auto lg:hidden p-2 hover:bg-gray-100 rounded-lg"
+      onclick="document.getElementById('sidebar').classList.add('-translate-x-full')"
+    >
+      <span class="sr-only">Close sidebar</span>
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="flex-1 px-2 py-4 space-y-1">
+    <p class="px-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+      Menu
+    </p>
+    
+    {navigation.map((item) => (
+      <a
+        href={item.href}
+        class:list={[
+          'flex items-center gap-3 px-3 py-2 text-sm rounded-lg transition-colors',
+          item.current 
+            ? 'bg-gray-100 text-gray-900 font-medium'
+            : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+        ]}
+      >
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={item.icon} />
+        </svg>
+        <span>{item.name}</span>
+        {item.hasDropdown && (
+          <svg class="w-4 h-4 ml-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        )}
+      </a>
+    ))}
+  </nav>
+
+  <!-- User -->
+  <div class="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200">
+    <div class="flex items-center gap-3">
+      <img
+        src="https://api.dicebear.com/9.x/shapes/svg?seed=Brooklynn"
+        alt="Avatar"
+        class="w-10 h-10 rounded-full bg-gray-100"
+      />
+      <div class="flex-1 min-w-0">
+        <p class="text-sm font-medium text-gray-900 truncate">
+          Khwala Andy
+        </p>
+        <p class="text-xs text-gray-500 truncate">
+          khwala@gmail.com
+        </p>
+      </div>
+      <button class="p-1 hover:bg-gray-100 rounded">
+        <svg class="w-4 h-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</aside>
+
+<!-- Mobile overlay -->
+<div 
+  id="sidebar-overlay"
+  class="fixed inset-0 bg-gray-600 bg-opacity-75 z-40 lg:hidden hidden"
+  onclick="
+    document.getElementById('sidebar').classList.add('-translate-x-full');
+    this.classList.add('hidden');
+  "
+></div>
+
+<!-- Mobile toggle button -->
+<button
+  type="button"
+  class="fixed bottom-4 right-4 lg:hidden inline-flex items-center justify-center p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+  onclick="
+    document.getElementById('sidebar').classList.remove('-translate-x-full');
+    document.getElementById('sidebar-overlay').classList.remove('hidden');
+  "
+>
+  <span class="sr-only">Open sidebar</span>
+  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+</button>

@@ -1,0 +1,66 @@
+---
+import Sidebar from "../components/Sidebar.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} - Fincorp</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-100">
+      <div class="flex">
+        <Sidebar />
+        <main
+          id="main-content"
+          class="flex-1 transition-all duration-300 ease-in-out p-4 lg:p-6"
+        >
+          <div
+            class="bg-white rounded-lg shadow-sm min-h-[calc(100vh-2rem)] lg:min-h-[calc(100vh-3rem)]"
+          >
+            <slot />
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  // Handle keyboard shortcut
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.key === "s") {
+      e.preventDefault(); // Prevent default save behavior
+      const sidebar = document.getElementById("sidebar");
+      const mainContent = document.getElementById("main-content");
+      const openSidebarIndicator = document.getElementById(
+        "open-sidebar-indicator"
+      );
+
+      sidebar?.classList.toggle("-translate-x-[100%]");
+      sidebar?.classList.toggle("lg:translate-x-0");
+
+      // Adjust main content when sidebar is hidden
+      mainContent?.classList.toggle("lg:mr-0");
+      mainContent?.classList.toggle("lg:ml-[-16rem]");
+
+      // Toggle open sidebar indicator
+      openSidebarIndicator?.classList.toggle("hidden");
+    }
+  });
+</script>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+</style>
